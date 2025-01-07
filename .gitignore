@@ -1,0 +1,14 @@
+# Logs
+*.log
+
+# Ambientes virtuais
+venv/
+.env
+
+# Arquivos gerados
+*.pyc
+__pycache__/
+
+# IDEs
+*.idea/
+.vscode/
