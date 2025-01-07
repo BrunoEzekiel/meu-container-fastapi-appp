@@ -42,53 +42,58 @@ Este projeto visa demonstrar a criação de um contêiner Docker para rodar uma 
 
 ### Navegue até o diretório do projeto:
 
-    
-    cd nome-do-repositorio
-    
+```bash
+cd nome-do-repositorio
+```
 
 Usando Docker: Para rodar o projeto em um contêiner Docker, basta executar o seguinte comando:
 
-bash
-Copiar código
+```bash
 docker-compose up --build
+```
 Isso irá construir a imagem Docker e rodar o contêiner com a aplicação FastAPI.
 
 Rodando localmente (sem Docker): Se preferir rodar o projeto localmente, primeiro crie um ambiente virtual:
 
-bash
+
 Copiar código
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate     # Windows
+```
 Instale as dependências:
 
-bash
+```bash
 Copiar código
 pip install -r requirements.txt
+```
 E, por fim, inicie o servidor FastAPI:
 
-bash
-Copiar código
+```bash
 uvicorn app:app --reload
-Uso
+```
+### Uso
 Uma vez que o contêiner esteja rodando (ou a aplicação localmente), acesse a aplicação no navegador:
 
 Com Docker: Acesse http://localhost:8000
+
 Localmente: Acesse http://localhost:8000
+
 A aplicação exibirá uma mensagem personalizada na página inicial.
 
 Exemplo de resposta:
 
-json
-Copiar código
+```json
 {
   "message": "Bem-vindo à minha aplicação FastAPI!"
 }
+``` 
 Estrutura do Projeto
 Aqui está a estrutura do projeto:
 
-bash
-Copiar código
+```bash
+
 /nome-do-projeto
 │
 ├── Dockerfile             # Arquivo para criar a imagem Docker
@@ -96,7 +101,9 @@ Copiar código
 ├── app.py                 # Arquivo principal da aplicação FastAPI
 ├── requirements.txt       # Dependências do projeto
 └── README.md              # Este arquivo
-Como Funciona
+```
+## Como Funciona
+
 1. FastAPI:
 O FastAPI é utilizado para criar a API de forma rápida e simples. Ao iniciar a aplicação, ela responde com uma mensagem personalizada.
 
@@ -111,22 +118,26 @@ Se você quiser contribuir com o projeto, siga os passos abaixo:
 
 Faça um fork do repositório.
 Crie uma branch para a sua feature:
-bash
-Copiar código
+```bash
 git checkout -b feature/nome-da-feature
+```
 Faça as alterações e comite:
-bash
+```bash
 Copiar código
 git commit -m "Descrição das alterações"
+```
 Envie para o repositório remoto:
-bash
+```bash
 Copiar código
 git push origin feature/nome-da-feature
-Crie um pull request explicando as alterações.
+```
+Crie um **pull request** explicando as alterações.
 Licença
-Este projeto está licenciado sob a MIT License.
+Este projeto está licenciado sob a **MIT License.**
 
-Referências
+### Referências
 FastAPI Documentation
+
 Docker Documentation
-Esse modelo foca nas tecnologias que você usou (FastAPI e Docker), além de detalhar o processo de instalação, uso e contribuições. Se quiser ajustar mais alguma coisa, é só me falar! 
+
+***Esse modelo foca nas tecnologias que você usou (FastAPI e Docker), além de detalhar o processo de instalação, uso e contribuições. Se quiser ajustar mais alguma coisa, é só me falar!*** 
